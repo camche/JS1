@@ -94,3 +94,9 @@ var paragraphs = `
         <p>fourth paragraph</p>
     </div>
     `;
+
+    // 5.7 Arrays
+
+    const nums = [1, 2, 3];
+
+    console.log(nums.length);
