@@ -86,7 +86,7 @@ var helloStringe = `<h1>Hello ${firstName}</h1>`
 
 var paragraphs = `
     first paragraph
-    ${firtName}
+    ${firstName}
     third paragraph
 
     <div>
@@ -96,7 +96,69 @@ var paragraphs = `
     `;
 
     // 5.7 Arrays
+    // set an array as following
 
-    const nums = [1, 2, 3];
+    const nums = [1, "string", 3];
 
     console.log(nums.length);
+    // add a value to the end of an array
+    nums.push(4);
+    console.log(nums);
+
+    // "Pop" off the last value of an array with "pop"
+    let lastIndex = nums.pop();
+    console.log(lastIndex);
+    console.log(nums);
+
+    // Reassign a value in and index within an array by assigning it as follows:
+    nums[0] = 1;
+    console.log(nums);
+
+
+
+
+    // 5.8 Objects
+
+    // example
+    const user = {
+        key: "data",
+        name : "Cameron",
+        age: 36,
+        hasJob: false,
+        socialMedia: {
+            twitter: "",
+            facebook: "",
+        }
+    };
+    
+    // dot syntax
+    // dot notation
+    // object.key returns value at key for object
+    console.log(user.name);
+
+    // string literal syntax
+    console.log(user['name']);
+
+    // variable syntax (use a string literal stored in a variable)
+    // const variable = key
+    // object[variable] returns value at variable-defined key
+    const key = 'name';
+    console.log(user[key]);
+
+    
+
+    // cannot reassign the name of an object defined by const
+    //  user = "newData" ... doesn't work
+    
+    // CAN reassign the data within an object
+    // re-assign data in an object
+    user.name = "kamenche";
+    console.log(user.name);
+    user.socialMedia.twitter = "cottello";
+    console.log(user.socialMedia.twitter);
+
+    // if data doesn't exist within an undefined...cannot read properties of undefined
+    // console.log(user.lastName.twitter);
+
+    // Document Object Model:
+    // document is the object in JS that represents the page you are working on
