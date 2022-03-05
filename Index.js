@@ -74,7 +74,23 @@ if (myName.length > lengthTest ) {
     console.log(`${myName} is NOT longer than ${lengthTest}`)
 }
 
+// video 5.6
 // "Template Strings"
+//  use \n to create new lines within a string
+//  use \t to insert a Tab worth of space in a string
+// use back ticks to be able to use new lines and tabs via enter/return keys and tab
+// template strings, and using back ticks make multi line strings and HTML v easy to write and generate with JS
 
-let firstName = "Aaron"
-let helloStringe = `<h1>Hello ${firstName}</h1>`
+var firstName = "Aaron"
+var helloStringe = `<h1>Hello ${firstName}</h1>`
+
+var paragraphs = `
+    first paragraph
+    ${firtName}
+    third paragraph
+
+    <div>
+        <h1>${firstName}</h1>
+        <p>fourth paragraph</p>
+    </div>
+    `;
