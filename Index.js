@@ -145,6 +145,7 @@ var paragraphs = `
     const key = 'name';
     console.log(user[key]);
 
+    for (let key in user))
     
 
     // cannot reassign the name of an object defined by const
