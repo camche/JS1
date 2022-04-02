@@ -15,7 +15,7 @@ let reps = false;
 let either = dems || reps
 console.log(either)
 
-
+// ==================================
 
 // Arrow functions
 // Similar to how function expressions are made:
@@ -89,3 +89,99 @@ console.log(doubleUntilOver1000(4))
 // 2. remove the word fucntion after the '=' and add a '=>' after the parameters
 // 3. remove the parens around the parameter if only 1 param, keep if more than 1
 // 4. can remove the '{}'s and the word return if the whole thing can fit on 1 line
+
+// What are HIGHER ORDER ARRAY FUNCTIONS:
+// find, some, every
+
+const nums = [1,2,3,4,5];
+
+// find
+
+// const found = nums.find(num => {
+//     if (num >2 ) {
+//         return true;
+//     }
+//     console.log(num, "ran function")
+// })
+
+// console.log(found) - > returns 3
+
+// some, every 
+
+// const hasSome = nums.some(num => {
+//     if (num === 10) {
+//         return true;
+//     }
+// })
+// console.log(hasSome); -> returns false
+
+const hasEvery = nums.every(num => {
+    console.log(num);
+    if (num > 2) {
+        return true;
+    }
+})
+
+console.log(hasEvery);
+
+// found = finds and returns a value that matches a criteria
+// some = returns true if any values match
+// every = returns true ONLY if ALL values match the 
+
+
+const ages = [21, 42, 50, 18];
+
+
+// FOR EACH
+ages.forEach((age, index, arr) => {
+    console.log(age, index, arr);
+});
+
+// MAP
+// MOST USEFUL OF ALL HIGHER ORDER ARRAY FUNCTIONS!
+// Because it allows us to modify the array IN-PLACE
+const newAges = ages.map(age => {
+    console.log(age);
+    if ( age > 40) {
+        return "boomer"
+    } else {
+        return "zoomer;"
+    }
+    return age;
+})
+
+console.log(newAges);
+
+// FILTER
+const filteredAges = ages.filter (age => {
+    if (age > 40) {
+        return true;
+    } else {
+        return false;
+    }
+})
+
+console.log(filteredAges)
+
+// SORT
+// (DOES work INPLACE)
+// Will sort an array of numbers lowest to highest
+// will sort an array of strings alphabeticals
+
+// ages.sort()
+
+// console.log(ages)
+//  Returned [18,21,42,50]
+
+
+// REDUCE
+// COMPLICATED and Useful
+// Makes a copy and DOES NOT mutate in place
+
+console.log(ages);
+
+const result = ages.reduce((prevReturn, currentVal) => prevReturn + currentVal);
+// 21 + 42 = 63 + 50 = 113 + 18 = 131
+
+console.log(result)
+// output is 131
