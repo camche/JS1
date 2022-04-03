@@ -95,7 +95,7 @@ console.log(doubleUntilOver1000(4))
 
 const nums = [1,2,3,4,5];
 
-// find
+// FIND()
 
 // const found = nums.find(num => {
 //     if (num >2 ) {
@@ -185,3 +185,6 @@ const result = ages.reduce((prevReturn, currentVal) => prevReturn + currentVal);
 
 console.log(result)
 // output is 131
+
+
+// find, forEach, sort, reduce
