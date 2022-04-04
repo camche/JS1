@@ -3,7 +3,7 @@ var repeatString = function(s, n) {
     while (n--) {
         acc += s;
     }
-    return acc;
+    return acc
   }
 
-  console.log(repeatString(4,3);
+console.log(repeatString("Asdf",3))
