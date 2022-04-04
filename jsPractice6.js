@@ -17,7 +17,7 @@
     this also known as a test :)
 */
 
-var nums = [-1, 2, 3, 4];
+var nums = [1, 2, 3, 4];
 
 /*
     SOME and EVERY
@@ -25,7 +25,7 @@ var nums = [-1, 2, 3, 4];
     ☑️ write some code to check if any / "some" numbers in nums are greater than 3
 */
 const isPositive = nums.every( num => {
-  if (num) {
+  if (num > 0) {
     return true;
   }
 } )
