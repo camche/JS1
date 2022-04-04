@@ -1,4 +1,3 @@
-var sum = 0;
 var multiplyNumbers = function(num1, num2) {
     var sum = 0;
     for (i=0; i < num1; i++) {
