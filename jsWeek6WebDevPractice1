@@ -38,14 +38,16 @@
             return pw.split('').map(char => char.charCodeAt(0) + 10).join('')
         }
 
-        const tweetsCollection = []
-            for (let tweet of tweets) {
+        // tweets as an array of objects with key=timestampValue and value=contentValue
+        const tweetsCollection = [];
+        for (let tweet of tweets) {
                 tweetsCollection.push(`${tweet.timestamp} : ${tweet.content}`)
-        }
+        };
 
+        // tweets as an object of objects with key=timestampValue and value=contentValue
         // const tweetsCollection = {}
         //     for (let tweet of tweets) {
-        //         tweetsObj[tweet.timestamp] = tweet.content;
+        //         tweetsCollection[tweet.timestamp] = tweet.content;
         // }
     
         var requestObject = {
