@@ -64,10 +64,11 @@ const tweetsArr = [
 // Group by day: {Day: [text 1, text2,...]}
 
 for (let arrItem of tweetsArr) {
+    console.log(arrItem)
     if (tweetsByDay[arrItem.day]) {
-         tweetsByDay[arrItem.day].push(arrItem.text);
+         tweetsByDay[arrItem.day].push(arrItem.text)
     } else {
-        tweetsByDay[arrItem.day] = [arrItem.text];
+        tweetsByDay[arrItem.day] = [arrItem.text]
     }
 }
 console.log(tweetsByDay)
